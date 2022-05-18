@@ -150,6 +150,10 @@ li{
     display: none;
 }
 
+.brands_hide-button{
+    display: none;
+}
+
 @media screen and (min-width: 800px){
 
     .brands__main-container{
@@ -181,7 +185,7 @@ li{
 
 
     .brands__item{
-
+        border-radius: 7px;
         position: relative;
         margin-top: 10px;
         margin-bottom: 16px;
@@ -193,5 +197,25 @@ li{
 
     .circle-logo{
         position: absolute;
+    }
+
+    .brands__item:nth-child(n+7){
+        display: none;
+    }
+
+    .brands_show-button span{
+        color :#1B1C21;
+        font-family: "TT Lakes", sans-serif;
+    }
+
+    .brands_show-button::before{
+        content: url("logos/icon.svg");
+        margin-left: 24px;
+        margin-right: 17px;
+    }
+
+    .brands_hide-button{
+        display: none;
+
     }
 }
