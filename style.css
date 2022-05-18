@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("fonts/TTLakes-Regular.eot");
+    src: local("../fonts/TT Lakes Regular"), local("fonts/TTLakes-Regular"),
+    url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: url("fonts/TTLakes-Medium.eot");
+    src: local("fonts/TT Lakes Medium"), local("fonts/TTLakes-Medium"),
+    url("fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+.brands{
+    background: #F2F2F2;
+}
+
+.brands__title{
+    width: auto;
+    /* на больших размерах высота меньше чем на 320*/
+    height: 80px;
+    font-family: "TT Lakes", sans-serif ;
+    color: #7E7E82;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 16px 0;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border-top: 1px solid #D9FFF5;
+
+}
+
+
+.brands__list{
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: scroll;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.swiper-slide{
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 7px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.swiper-slide:hover{
+    outline: 2px solid #FF3E79;
+}
+
+.circle-logo{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.dropdown-logo{
+    position: absolute;
+    top: 31px;
+    right: 30px;
+
+}
+
+.swiper-slide:first-child{
+    margin-left: 16px;
+}
+
+.img-logo-lenovo{
+    margin: 20px 16px 0;
+}
+
+.img-logo-sumsung{
+    margin: 17px 16px 0;
+}
+
+.img-logo-apple{
+    margin: 12px 16px;
+}
+
+.img-logo-view{
+    margin: 26px 14px 25px;
+}
+
+.img-logo-bosh{
+    margin: 21.7px 16px;
+}
+
+.img-logo-hp{
+    margin: 10px;
+}
+
+.img-logo-acer{
+    margin: 24px 16px;
+}
+
+.img-logo-sony{
+    margin: 23.4px 14px;
+}
+
+
+.swiper-pagination-bullets{
+     height: 20px;
+
+ }
+
+.swiper__list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 38px;
+    margin-right: 38px;
+
+}
