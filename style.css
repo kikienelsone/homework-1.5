@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "TT Lakes";
     src: url("fonts/TTLakes-Regular.eot");
@@ -135,9 +134,9 @@ li{
 
 
 .swiper-pagination-bullets{
-     height: 20px;
+    height: 20px;
 
- }
+}
 
 .swiper__list{
     display: flex;
@@ -145,4 +144,54 @@ li{
     margin-left: 38px;
     margin-right: 38px;
 
+}
+
+.brands__main-container{
+    display: none;
+}
+
+@media screen and (min-width: 800px){
+
+    .brands__main-container{
+        max-width: 786px;
+    }
+
+    .brands__slider{
+        display: none;
+    }
+
+
+    .brands__title{
+        height: 56px;
+       padding-left: 24px;
+
+    }
+
+    .brands__main-container{
+        display: flex;
+    }
+
+    .brands__name-list{
+        display: flex;
+        flex-direction: row;
+        /*justify-content: ;*/
+        flex-wrap: wrap;
+
+    }
+
+
+    .brands__item{
+
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+        background: #FFFFFF;
+        width: 230px;
+        height: 70px;
+    }
+
+    .circle-logo{
+        position: absolute;
+    }
 }
