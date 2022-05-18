@@ -55,7 +55,7 @@ li{
     letter-spacing: -0.2px;
     text-transform: uppercase;
     /*background: #FFFFFF;*/
-    background-image: linear-gradient(to right, #F2F2F2, #FFFFFF);
+    background-image: linear-gradient(to right, #F2F2F2 30%, #FFFFFF);
     border-top: 1px solid #D9FFF5;
 
 }
