@@ -54,7 +54,8 @@ li{
     line-height: 24px;
     letter-spacing: -0.2px;
     text-transform: uppercase;
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
+    background-image: linear-gradient(to right, #F2F2F2, #FFFFFF);
     border-top: 1px solid #D9FFF5;
 
 }
@@ -207,8 +208,12 @@ li{
         position: absolute;
     }
 
-    .active{
+    .for-hide:nth-child(n+4){
         display: none;
+    }
+
+    .active{
+        display: block;
     }
 
     .brands_show-button{
@@ -230,11 +235,18 @@ li{
 }
 
 @media screen and (min-width: 1120px){
+
+    .brands{
+        margin-left: 350px;
+
+    }
+
+
     .brands__main-container{
         max-width: 1120px;
     }
 
-    .active:nth-child(-n+8){
+    .for-hide:nth-child(-n+8){
         display: block;
     }
 
