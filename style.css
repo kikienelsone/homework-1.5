@@ -298,7 +298,7 @@ li{
     }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (min-width: 1400px){
     .brands__main-container{
         display: flex;
         flex-wrap: nowrap;
@@ -308,15 +308,15 @@ li{
     }
 }
 
-@media screen and (max-width: 1920px){
-    .brands__main-container{
-        display: flex;
-        flex-wrap: nowrap;
-        max-width: 1920px;
-        height: 200px;
-        overflow-y: hidden;
-    }
-}
+/*@media screen and (max-width: 1920px){*/
+/*    .brands__main-container{*/
+/*        display: flex;*/
+/*        flex-wrap: nowrap;*/
+/*        max-width: 1920px;*/
+/*        height: 200px;*/
+/*        overflow-y: hidden;*/
+/*    }*/
+/*}*/
 
 .brandsShow{
     /*visibility: hidden;*/
