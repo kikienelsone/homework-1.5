@@ -30,7 +30,7 @@ showBrands = () =>{
 
 hideBrands = () =>{
     hideBtn.classList.remove("active")
-    activeBtn.classList.add("active")
+    activeBtn.classList.remove("hide")
     brands.classList.remove("brandsShow")
 
 }
