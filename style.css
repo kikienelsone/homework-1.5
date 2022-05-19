@@ -67,9 +67,15 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    overflow: scroll;
+    /*overflow: scroll;*/
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 35px;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide{
@@ -78,7 +84,12 @@ li{
     border-radius: 7px;
     margin-right: 16px;
     cursor: pointer;
+    min-width: 240px;
+    min-height: 70px;
+    max-height: 70px;
 }
+
+
 
 .swiper-slide:hover{
     outline: 2px solid #FF3E79;
@@ -134,8 +145,10 @@ li{
 }
 
 
-.swiper-pagination-bullets{
-    height: 20px;
+.swiper-pagination{
+    /*position: absolute;*/
+    top:94px;
+
 
 }
 
@@ -208,13 +221,24 @@ li{
         position: absolute;
     }
 
-    .for-hide:nth-child(n+4){
+    /*.for-hide:nth-child(n+4){*/
+    /*    display: none;*/
+    /*}*/
+
+
+    .for-hide{
         display: none;
     }
 
-    .active{
-        display: block;
+    .hidden{
+        display: none;
     }
+
+    /*.active{*/
+    /*    display: block;*/
+    /*}*/
+
+
 
     .brands_show-button{
         display: block;
@@ -228,8 +252,16 @@ li{
         margin-right: 17px;
     }
 
+    .brands_hide-button::before{
+        content: url("logos/icon.svg");
+        margin-left: 24px;
+        margin-right: 17px;
+    }
+
     .brands_hide-button{
         display: none;
+        color :#1B1C21;
+        font-family: "TT Lakes", sans-serif;
 
     }
 }
@@ -245,8 +277,31 @@ li{
         max-width: 1120px;
     }
 
-    .for-hide:nth-child(-n+8){
+    .for-hide{
         display: block;
     }
 
+    /*.for-hide:nth-child(-n+8){*/
+    /*    display: block;*/
+    /*}*/
+
+    .hidden{
+        display: none;
+    }
+
+}
+.brandsHide{
+    visibility: hidden;
+    height: 0;
+    margin-bottom: -30px;
+}
+
+
+.hide{
+    display: none;
+
+}
+
+.active{
+    display: block;
 }
