@@ -18,22 +18,19 @@
 
 let activeBtn = document.querySelector(".brands_show-button")
 let hideBtn = document.querySelector(".brands_hide-button")
-let brands = document.querySelectorAll(".hidden")
+let brands = document.querySelector(".brands__main-container")
 
 
 showBrands = () =>{
     activeBtn.classList.add("hide")
-
-    for (let i = 0; i < brands.length; i++) {
-         brands[i].classList.add("active")
-     }
     hideBtn.classList.add("active")
+    brands.classList.add("brandsShow")
+
 }
 
 hideBrands = () =>{
     hideBtn.classList.remove("active")
     activeBtn.classList.add("active")
-    for (let i = 0; i < brands.length; i++) {
-         brands[i].classList.add("brandsHide")
-     }
+    brands.classList.remove("brandsShow")
+
 }
